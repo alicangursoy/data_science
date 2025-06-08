@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fa70ec99-924b-4a92-aec9-fba1579e026e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/dataScience.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ABTesti/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ABTesti/.idea/ABTesti.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ABTesti/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ABTesti/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ABTesti/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ABTesti/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ABTesti/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ABTesti/AB_TESTING.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ABTesti/AB_Testi.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ABTesti/ab_testing.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Rating Product&amp;SortingReviewsinAmazon.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rating Product &amp; Sorting Reviews in Amazon.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rating_Product_Sorting_Reviews_Amazon.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amazon_review.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data_analysis_with_python/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data_analysis_with_python/.idea/data_analysis_with_python.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data_analysis_with_python/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data_analysis_with_python/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data_analysis_with_python/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data_analysis_with_python/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data_analysis_with_python/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data_analysis_with_python/data_analysis_with_python.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data_analysis_with_python/datasets/advertising.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data_analysis_with_python/datasets/application_train.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data_analysis_with_python/datasets/breast_cancer.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data_analysis_with_python/datasets/persona.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data_structures/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data_structures/.idea/data_structures.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data_structures/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data_structures/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data_structures/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data_structures/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data_structures/data_structures.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ders_kaynaklari/functions_conditions_loops_comprehension/.idea/functions_conditions_loops_comprehension.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ders_kaynaklari/measurement_problems/.idea/measurement_problems.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../functions_conditions_loops_comprehensions/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../functions_conditions_loops_comprehensions/.idea/functions_conditions_loops_comprehensions.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../functions_conditions_loops_comprehensions/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../functions_conditions_loops_comprehensions/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../functions_conditions_loops_comprehensions/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../functions_conditions_loops_comprehensions/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../functions_conditions_loops_comprehensions/functions_conditions_loops_comprehensions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kural_tabanli_siniflandirma/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kural_tabanli_siniflandirma/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kural_tabanli_siniflandirma/.idea/kural_tabanli_siniflandirma.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kural_tabanli_siniflandirma/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kural_tabanli_siniflandirma/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kural_tabanli_siniflandirma/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kural_tabanli_siniflandirma/kural_tabanli_siniflandirma.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../list_comprehension/.idea/list_comprehension.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../list_comprehension/list_comprehension.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../measurement_problems/measurement_problems/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../measurement_problems/measurement_problems/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../measurement_problems/measurement_problems/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../measurement_problems/measurement_problems/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../measurement_problems/measurement_problems/.idea/rating.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../measurement_problems/measurement_problems/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../measurement_problems/measurement_problems/datasets/course_reviews.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../measurement_problems/measurement_problems/datasets/diabetes.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../measurement_problems/measurement_problems/datasets/imdb_ratings.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../measurement_problems/measurement_problems/datasets/movies_metadata.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../measurement_problems/measurement_problems/datasets/product_sorting.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../measurement_problems/measurement_problems/rating/rating.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../measurement_problems/measurement_problems/sorting/sorting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../measurement_problems/measurement_problems/sorting_reviews/sorting_reviews.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pandasAlistirmalar/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pandasAlistirmalar/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pandasAlistirmalar/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pandasAlistirmalar/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pandasAlistirmalar/.idea/pandasAlistirmalar.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pandasAlistirmalar/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pandasAlistirmalar/pandas_alistimalar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonAlistirmalar/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonAlistirmalar/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonAlistirmalar/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonAlistirmalar/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonAlistirmalar/.idea/pythonAlistirmalar.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonAlistirmalar/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonAlistirmalar/python_alistirmalar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProgramlama/python_for_data_science/data_analysis_with_python/.idea/data_analysis_with_python.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProgramlama/python_for_data_science/data_structures/.idea/data_structures.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProgramlama/python_for_data_science/functions_conditions_loops_comprehensions/.idea/functions_conditions_loops_comprehensions.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/.idea/pythonProject.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/setting_up_working_environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mobileAppDevelopment/traumaRelief/traumaRelief.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppDevelopment/traumaRelief/traumaRelief.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mobileAppDevelopment/traumaRelief/traumaRelief.xcworkspace/xcuserdata/gursoy.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppDevelopment/traumaRelief/traumaRelief.xcworkspace/xcuserdata/gursoy.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mobileAppDevelopment/traumaRelief/traumaRelief.xcworkspace/xcuserdata/gursoy.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppDevelopment/traumaRelief/traumaRelief.xcworkspace/xcuserdata/gursoy.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mobileAppDevelopment/traumaRelief/traumaRelief/Controllers/EMDRmaticViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppDevelopment/traumaRelief/traumaRelief/Controllers/EMDRmaticViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mobileAppDevelopment/traumaRelief/traumaRelief/Controllers/InfoAndAgreeView.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppDevelopment/traumaRelief/traumaRelief/Controllers/InfoAndAgreeView.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mobileAppDevelopment/traumaRelief/traumaRelief/Controllers/Main2ViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppDevelopment/traumaRelief/traumaRelief/Controllers/Main2ViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mobileAppDevelopment/traumaRelief/traumaRelief/Extensions/UIViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppDevelopment/traumaRelief/traumaRelief/Extensions/UIViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mobileAppDevelopment/traumaRelief/traumaRelief/Extensions/UIViewControllerExtension.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mobileAppDevelopment/traumaRelief/traumaRelief/ViewModels/MainVCViewModel.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobileAppDevelopment/traumaRelief/traumaRelief/ViewModels/MainVCViewModel.swift" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2vqNaSFAuzpDIGfzpxxOBymWXJW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Rating Product&amp;SortingReviewsinAmazon" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fa70ec99-924b-4a92-aec9-fba1579e026e" name="Changes" comment="" />
+      <created>1744868708257</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744868708257</updated>
+      <workItem from="1744868709379" duration="4191000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

@@ -1,0 +1,26 @@
+2025-06-07 14:35:55.703018 - House price prediction process is started.
+2025-06-07 14:35:55.983899 - Outlier values will be replaced by threshold.
+2025-06-07 14:35:56.002380 - Outlier values are replaced by threshold.
+2025-06-07 14:35:56.044779 - Count of empty numerical values: 673
+2025-06-07 14:35:57.196856 - After filling empty numerical values via KNN Imputer, remaining count of empty numerical values: 0
+2025-06-07 14:35:57.200345 - Count of empty categorical values: 15034
+2025-06-07 14:35:57.225857 - After filling empty categorical values with mode values, remaining empty categorical values: 0
+2025-06-07 14:35:57.373562 - Models and Their Scores
+2025-06-07 14:35:57.373578 - create_lgbm_regressor_model_get_score has started.
+2025-06-07 14:40:38.022036 - Best parameters for model LGBMRegressor: {'learning_rate': 0.01, 'max_depth': 6, 'n_estimators': 900}
+2025-06-07 14:40:40.040281 - create_lgbm_regressor_model_get_score has finished.
+2025-06-07 14:40:40.040636 - LGBMRegressor: 26693.40347871041
+2025-06-07 14:40:40.040664 - create_gradient_boost_regression_model_get_score has started.
+2025-06-07 14:48:08.449861 - Best parameters for Gradient Boosting Regressor model: {'learning_rate': 0.01, 'max_depth': 5, 'n_estimators': 1000, 'subsample': 0.5}
+2025-06-07 14:48:13.808251 - create_gradient_boost_regression_model_get_score has finished.
+2025-06-07 14:48:13.808515 - GradientBoostingRegressor: 30499.839387714423
+2025-06-07 14:48:13.808531 - create_xgb_regressor_model_get_score has started.
+2025-06-07 14:49:01.066306 - Best parameters for XGBRegressor model: {'learning_rate': 0.1, 'max_depth': 6, 'n_estimators': 300}
+2025-06-07 14:49:01.772033 - create_xgb_regressor_model_get_score has finished.
+2025-06-07 14:49:01.772218 - XGBRegressor: 28642.156225539606
+2025-06-07 14:49:01.772231 - create_rf_regressor_model_get_score has started.
+2025-06-07 14:51:26.033674 - Best parameters for RandomForestRegressor model: {'max_depth': None, 'max_features': 1.0, 'min_samples_split': 5, 'n_estimators': 100}
+2025-06-07 14:51:27.545784 - create_rf_regressor_model_get_score has finished.
+2025-06-07 14:51:27.546315 - RandomForestRegressor: 29531.179486372097
+2025-06-07 14:51:27.546910 - Scores are being ordered. Final model will be decided according to the scores. The minimum score is the best score, because scores are calculated via RMSE method.
+2025-06-07 14:51:27.596116 - Elapsed time: 0:15:31.893091

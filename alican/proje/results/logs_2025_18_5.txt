@@ -1,0 +1,37 @@
+2025-06-05 17:49:28.244710 - House price prediction process is started.
+Outlier values will be replaced by threshold.
+Outlier values are replaced by threshold.
+Boş nümerik değer sayısı: 673
+KNN Imputer ile boş nümerik değerler doldurulduktan sonra kalan boş nümerik değer sayısı: 0
+Boş kategorik değer sayısı: 15034
+Kalan boş kategorik değerler mode değeriyle doldurulduktan sonra kalan boş kategorik değer sayısı: 0
+2025-06-05 17:49:29.712705 - house_price_predict has started.
+2025-06-05 17:49:29.717447 - create_lgbm_regressor_model_get_score has started.
+2025-06-05 17:54:55.894181 - Best parameters for model LGBMRegressor: {'learning_rate': 0.01, 'max_depth': 7, 'n_estimators': 900}
+2025-06-05 17:54:57.129404 - create_lgbm_regressor_model_get_score has finished.
+2025-06-05 17:54:57.129851 - create_gradient_boost_regression_model_get_score has started.
+2025-06-05 18:02:08.386893 - Best parameters for Gradient Boosting Regressor model: {'learning_rate': 0.01, 'max_depth': 5, 'n_estimators': 1000, 'subsample': 0.3}
+2025-06-05 18:02:11.739299 - create_gradient_boost_regression_model_get_score has finished.
+2025-06-05 18:02:11.739614 - create_xgb_regressor_model_get_score has started.
+2025-06-05 18:02:57.056023 - Best parameters for XGBRegressor model: {'learning_rate': 0.1, 'max_depth': 6, 'n_estimators': 500}
+2025-06-05 18:02:58.039846 - create_xgb_regressor_model_get_score has finished.
+2025-06-05 18:02:58.040115 - create_rf_regressor_model_get_score has started.
+2025-06-05 18:05:24.996578 - Best parameters for RandomForestRegressor model: {'max_depth': 18, 'max_features': 1.0, 'min_samples_split': 5, 'n_estimators': 200}
+2025-06-05 18:05:27.830876 - create_rf_regressor_model_get_score has finished.
+2025-06-05 18:05:27.832193 - Scores are being ordered. Final model will be decided according to the scores. The minimum score is the best score, because scores are calculated via RMSE method.
+2025-06-05 18:05:27.832226 - Modeller ve skorları: {LGBMRegressor(learning_rate=0.01, max_depth=7, n_estimators=900,
+              random_state=90): 26644.560479000946, XGBRegressor(base_score=None, booster=None, callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=None, device=None, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             feature_weights=None, gamma=None, grow_policy=None,
+             importance_type=None, interaction_constraints=None,
+             learning_rate=0.1, max_bin=None, max_cat_threshold=None,
+             max_cat_to_onehot=None, max_delta_step=None, max_depth=6,
+             max_leaves=None, min_child_weight=None, missing=nan,
+             monotone_constraints=None, multi_strategy=None, n_estimators=500,
+             n_jobs=None, num_parallel_tree=None, ...): 29750.121771114256, RandomForestRegressor(max_depth=18, min_samples_split=5, n_estimators=200,
+                      random_state=90): 31132.314119408275, GradientBoostingRegressor(learning_rate=0.01, max_depth=5, n_estimators=1000,
+                          random_state=90, subsample=0.3): 31473.37836453929}
+2025-06-05 18:05:27.921901 - house_price_predict has finished.
+Elapsed time: 0:15:59.680739

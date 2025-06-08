@@ -1,0 +1,40 @@
+Kolonlar ayrıştırılırken yaptığım değişiklik:
+1. "NEIGHBORHOOD" değişkeni, cat_but_car'in içinde geliyordu ve hesaplamalara katılmayacaktı.
+"NEIGHBORHOOD" değişkeninin farklı 25 adet değeri vardı.
+Kolonları ayrıştırırken car_th değerini 25'e çekerek, bu değişkenin de cat_cols arasına katılmasını sağladım.
+
+
+Aykırı değerleri kaldırırken yaptığım değişiklik:
+1. q1'in değerini 0.25'ten 0.01'e, q3'ün değerini de 0.75'ten 0.99'a çektim.
+Bunun nedeni, fiyatı belirleyecek önemli değişkenlerin değerleri aykırı diye değerlendirilerek baskılanıyordu.
+
+Yeni değişken oluştururken kullandıklarım:
+1. "NEW_TOTAL_PORCH_AREA_CAT"
+    a. "TOTAL_PORCH_AREA"
+        I. df["TOTAL_PORCH_AREA"] = df["OPENPORCHSF"] + df["3SSNPORCH"] + df["ENCLOSEDPORCH"] + df["SCREENPORCH"]
+    b. num_summary(df, ["TOTAL_PORCH_AREA"])
+2. "NEW_HOUSE_AGE_CAT"
+    a. "HOUSE_AGE"
+        I. df["HOUSE_AGE"] = (date.today().year - df["YEARBUILT"])
+    b. num_summary(df, ["HOUSE_AGE"])
+3. "NEW_HOUSE_REMOD_AGE_CAT"
+    a. "HOUSE_REMOD_AGE"
+        I. df["HOUSE_REMOD_AGE"] = (date.today().year - df["YEARREMODADD"])
+    b.num_summary(df, ["HOUSE_REMOD_AGE"])
+4. "NEW_GARAGEAREA_CAT"
+    a. num_summary(df, ["GARAGEAREA"])
+5. "NEW_LOTAREA_CAT"
+    a. num_summary(df, ["LOTAREA"])
+6. "NEW_BSMT_FINSF_CAT"
+    a. "BSMT_FINSF"
+        I. df["BSMT_FINSF"] = df["BSMTFINSF1"] + df["BSMTFINSF2"]
+    b. num_summary(df, ["BSMT_FINSF"])
+7. "NEW_TOTALBSMTSF_CAT"
+    a. num_summary(df, ["TOTALBSMTSF"])
+8. "NEW_2NDFLRSF_CAT"
+    a. num_summary(df, ["2NDFLRSF"])
+9. "NEW_1STFLRSF_CAT"
+    a. num_summary(df, ["1STFLRSF"])
+10. "NEW_POOLAREA_CAT"
+    a. Bir evin havuzunun olması, fiyatını artıracak önemli bir etken.
+
