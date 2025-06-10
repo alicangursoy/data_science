@@ -420,8 +420,7 @@ def create_linear_reg_model_get_score(X_train, y_train, X_test, y_test):
     line = f"{datetime.now()} - create_linear_reg_model_get_score has started."
     log_lines.append(line)
     print(line)
-    linear_reg_model = LinearRegression()
-    linear_reg_model.fit(X_train, y_train)
+    linear_reg_model = LinearRegression().fit(X_train, y_train)
     line = f"{datetime.now()} - Weights and bias for Linear Regression model: "
     log_lines.append(line)
     print(line)
@@ -444,7 +443,7 @@ def create_lasso_reg_model_get_score(X_train, y_train, X_test, y_test):
     line = f"{datetime.now()} - create_lasso_reg_model_get_score has started."
     log_lines.append(line)
     print(line)
-    lasso_reg_model = Lasso(max_iter=100000)
+    lasso_reg_model = Lasso(max_iter=100000).fit(X_train, y_train)
     lasso_reg_model_param = {'alpha': [0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1, 5, 10]}
     gs = GridSearchCV(lasso_reg_model, lasso_reg_model_param, cv=5, n_jobs=-1).fit(X_train, y_train)
     line = f"{datetime.now()} - Best parameters for Lasso Linear Regression model: {gs.best_params_}"
@@ -464,7 +463,7 @@ def create_ridge_reg_model_get_score(X_train, y_train, X_test, y_test):
     line = f"{datetime.now()} - create_ridge_reg_model_get_score has started."
     log_lines.append(line)
     print(line)
-    ridge_reg_model = Ridge()
+    ridge_reg_model = Ridge().fit(X_train, y_train)
     ridge_reg_model_param = {'alpha': [0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1, 5, 10]}
     gs = GridSearchCV(ridge_reg_model, ridge_reg_model_param, cv=5, n_jobs=-1).fit(X_train, y_train)
     line = f"{datetime.now()} - Best parameters for Ridge Linear Regression model: {gs.best_params_}"
@@ -484,9 +483,10 @@ def create_elastic_net_reg_model_get_score(X_train, y_train, X_test, y_test):
     line = f"{datetime.now()} - create_elastic_net_reg_model_get_score has started."
     log_lines.append(line)
     print(line)
-    elastic_net_reg_model = ElasticNet()
+    elastic_net_reg_model = ElasticNet().fit(X_train, y_train)
     elastic_net_reg_model_param = {'alpha': [0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1, 5, 10],
                                    'l1_ratio': [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]}
+
     gs = GridSearchCV(elastic_net_reg_model, elastic_net_reg_model_param, cv=5, n_jobs=-1).fit(X_train, y_train)
     line = f"{datetime.now()} - Best parameters for ElasticNet Linear Regression model: {gs.best_params_}"
     log_lines.append(line)
@@ -698,25 +698,28 @@ def house_price_predict(log_lines):
     target = "SALEPRICE"
     y = df_train[target]
     X = df_train.drop([target, "ID"], axis=1)
-    # tree_model_score_dict = get_tree_model_score_dict(X, y)
+    tree_model_score_dict = get_tree_model_score_dict(X, y)
     # tree_model_with_lowest_rmse_score = sort_models_by_rmse_get_first(tree_model_score_dict)
 
     linear_model_score_dict = get_linear_model_score_dict(X, y)
-    linear_model_with_lowest_rmse_score = sort_models_by_rmse_get_first(linear_model_score_dict)
+    # linear_model_with_lowest_rmse_score = sort_models_by_rmse_get_first(linear_model_score_dict)
+
+    model_score_dict = tree_model_score_dict | linear_model_score_dict
+    model_with_lowest_rmse_score = sort_models_by_rmse_get_first(model_score_dict)
 
     # Bonus: Test verisinde boş olan salePrice değişkenlerini tahminleyiniz ve Kaggle sayfasına submit etmeye uygun halde bir dataframe oluşturup sonucunuzu yükleyiniz.
-    # df_result = predict_with_model_get_result(df_test, tree_model_with_lowest_rmse_score)
-    df_result = predict_with_model_get_result(df_test, linear_model_with_lowest_rmse_score, is_tree_model=False)
+    df_result = predict_with_model_get_result(df_test, model_with_lowest_rmse_score)
     df_result.to_csv("submission.csv", sep=",", index=False, columns=df_result.columns)
     line = f"{datetime.now()} - house_price_predict has finished."
     log_lines.append(line)
     print(line)
 
 
-def predict_with_model_get_result(dataframe, model, target="SALEPRICE", is_tree_model=True):
+def predict_with_model_get_result(dataframe, model, target="SALEPRICE"):
     X = dataframe.drop([target, "ID"], axis=1)
     dataframe[target] = model.predict(X)
-    if is_tree_model:
+    tree_models = ["LGBMRegressor", "GradientBoostingRegressor", "XGBRegressor", "RandomForestRegressor"]
+    if type(model).__name__ in tree_models:
         dataframe[target] = np.exp(dataframe[target])
     dataframe["ID"] = dataframe["ID"].astype(int)
     df_result = dataframe[["ID", "SALEPRICE"]]
@@ -750,7 +753,7 @@ if __name__ == "__main__":
     # using now() to get current time
     log_lines = []
     dt_start = datetime.now()
-    line = f"{dt_start} - House price prediction process is started. Linear models will be examined."
+    line = f"{dt_start} - House price prediction process is started. Linear and tree models will be examined."
     print(line)
     log_lines.append(line)
     house_price_predict(log_lines)
