@@ -38,3 +38,44 @@ Yeni değişken oluştururken kullandıklarım:
 10. "NEW_POOLAREA_CAT"
     a. Bir evin havuzunun olması, fiyatını artıracak önemli bir etken.
 
+Model seçimi:
+1. Lineer ya da ağaç regresyon modellerinden birini seçmem gerekiyordu.
+2. Ağaç regresyon modelleri için:
+    a. En İyi Hiperparametreler:
+        I. XGBRegressor için: {'learning_rate': 0.08, 'max_depth': 5, 'n_estimators': 300} (Adaylar: {"learning_rate": [0.001, 0.005, 0.01, 0.05, 0.06, 0.07, 0.08, 0.09, 0.1], "n_estimators": [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000],
+                   "max_depth": [5, 10, 15, 20, 25, None]})
+        II. GradientBoostingRegressor için: {'learning_rate': 0.01, 'max_depth': None, 'n_estimators': 500, 'subsample': 0.1} (Adaylar: {"learning_rate": [0.001, 0.005, 0.01, 0.05, 0.06, 0.07, 0.08, 0.09, 0.1], "n_estimators": [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000],
+                             "max_depth": [5, 10, 15, 20, 25, None], "subsample": [0.1, 0.3, 0.5, 0.7, 0.9, 1.0]})
+        III. LGBMRegressor için: {'learning_rate': 0.06, 'max_depth': 5, 'n_estimators': 200} (Adaylar: {"learning_rate": [0.001, 0.005, 0.01, 0.05, 0.06, 0.07, 0.08, 0.09, 0.1], "n_estimators": [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000],
+                        "max_depth": [5, 10, 15, 20, 25, None]})
+        IV. RandomForestRegressor için: {'max_depth': None, 'max_features': 1.0, 'min_samples_split': 2, 'n_estimators': 100} (Adaylar: {"max_features": [1.0, "sqrt", "log2", None], "min_samples_split": [2, 5, 10, 15, 20],
+                     "n_estimators": [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000], "max_depth": [5, 10, 15, 20, 25, None]})
+    b. En İyi Skorlar (En küçük değer en iyi skordur.):
+        I. XGBRegressor: 28817.5755665784
+        II. GradientBoostingRegressor: 30291.737613825946
+        III. LGBMRegressor: 26075.30884338633 (Verilen hiperparametrelerle en iyi ağaç modeli)
+        IV. RandomForestRegressor: 29974.279093547426
+    c. Çalışma süreleri:
+        I. XGBRegressor: 35 dk 11,53 sn
+        II. GradientBoostingRegressor: 8 saat 53 dk 4,4 sn
+        III. LGBMRegressor: 1 saat 46 dk 56,6 sn
+        IV. RandomForestRegressor: 1 saat 4 dk 56,2 sn
+    d. Sonuç: Verilen hiperparametrelerle en iyi ağaç modeli Light GBM Regressor (LGBMRegressor) çıktı.
+3. Lineer regresyon modelleri için:
+    a. En İyi Hiperparametreler:
+        I. Lasso ve Ridge için: {'alpha': 10} (Adaylar: {'alpha': [0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1, 5, 10]})
+        II. ElasticNet için: {'alpha': 0.1, 'l1_ratio': 0.8} (Adaylar: {'alpha': [0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1, 5, 10],
+                                   'l1_ratio': [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]}
+        III. Lineer Model için hiperparametre bulunmamaktadır.
+    b. En İyi Skorlar (En küçük değer en iyi skordur.):
+        I. ElasticNet Lineer Model: 31756.332452634208 (Verilen hiperparametrelerle en iyi lineer model)
+        II. Lasso Lineer Model: 34500.28629755151
+        III. Ridge Lineer Model: 33882.522380749804
+        IV. Lineer Model: 35547.56416082212
+    c. Çalışma süreleri:
+        I. ElasticNet Lineer Model: 17,5 sn
+        II. Lasso Lineer Model: 4 dk 7,85 sn
+        III. Ridge Lineer Model: 1,65 sn
+        IV. Lineer Model: 0,33 sn
+    d. Sonuç: Verilen hiperparametrelerle en iyi lineer model ElasticNet Lineer Model Çıktı.
+4. Seçilen model: Light GBM Regressor (Skoru en iyi çıktığı için)
